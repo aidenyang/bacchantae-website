@@ -1,0 +1,141 @@
+/* ANCHOR STYLES --------*/
+
+.banner a:link {
+	color: white;
+}
+
+.banner a:visited {
+	color: white;
+}
+
+.banner a:hover {
+	color: #decaaa;
+}
+
+a:link {
+	color: #474747;
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #474747;
+}
+
+a:hover {
+	color: #decaaa;
+}
+
+a:active {
+	position: relative;
+	top: 1px;
+}
+
+a.current {
+	color: #decaaa;
+}
+
+/* NAV STYLES ----*/
+
+.nav ul {
+	text-align: center;
+	padding: 0 0 0 0;
+	margin-bottom: 0;
+	border-bottom: 1px solid #474747;
+}
+
+
+.nav ul li {
+	list-style: none;
+	display: inline;
+	padding: 0 1em 0 1em;
+	letter-spacing: 0.2em;
+	font-family: "freight-display-pro";
+	text-transform: lowercase;
+	font-style: oblique;
+}
+
+.logo {
+	font-family: "proxima-nova";
+	font-weight: 800;
+	font-size: 1.5em;
+	letter-spacing: 0.4em;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 0.5em 0 0 0;
+	color: #474747;
+}
+
+/* OTHER STYLES ----*/
+
+h1 {
+	font-family: "freight-display-pro";
+	font-size: 1.5em;
+}
+
+#footer {
+	left: 0;
+	bottom: 0;
+	height: 70px;
+	width: 100%;
+	clear: both;
+	text-align: center;
+}
+
+#social-media {
+	padding-left: 0.5em;
+	display: inline;
+	text-align: center;
+	font-size: 1em;
+	font-style: oblique;
+}
+
+/* IE 6 */
+* html #footer {
+	position:absolute;
+	top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}
+
+#main{ 
+	background: url(../img/main_pic_grayscale.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.banner {
+	font-family: "proxima-nova";
+	text-shadow: 1px 1px 1px #000;
+	font-weight: 800;
+	font-size: 5em;
+	letter-spacing: 0.4em;
+	text-transform: uppercase;
+	left: 0;
+	text-align: center;
+	line-height: 200px;
+	margin: auto;
+	margin-top: -100px;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+}
+
+.content {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+
+/* MEDIA QUERIES ----*/
+
+@media (max-width:900px) {
+	.banner {
+		font-size: 2.5em;
+	}
+}
+
+@media (max-width:556px) {
+	.banner {
+		font-size: 1.5em;
+	}
+}
